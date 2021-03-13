@@ -1,0 +1,117 @@
+env:
+  TERM: alacritty
+
+# Window customisation
+window:
+  # Spread additional padding evenly around the terminal content.
+  # dynamic_padding: true
+
+  # Startup Mode (changes require restart)
+  startup_mode: Windowed
+
+  # Window padding
+  # padding:
+  # x: 5
+  # y: 5
+
+  # Decorations
+  decorations: none
+
+background_opacity: 0.94
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+
+  italic:
+    family: Victor Mono
+    style: SemiBold Italic
+
+  bold_italic:
+    family: Victor Mono
+    style: SemiBold Italic
+
+  # Font size
+  size: 12.0
+
+  # Offset is the extra space around each character
+  offset:
+    x: 0
+    y: 1
+
+  # This offset should usually be 1/2 of the above offset-y being set.
+  glyph_offset:
+    x: 0
+    # Keeping this as half of offset to vertically align the text in cursor
+    y: 1
+
+  use_thin_strokes: true
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
+# Setup some amazing custom key bindings here - Best thing is you can setup key bindings
+# using Mac's 'command' to control your tmux.
+# A great reference: https://arslan.io/2018/02/05/gpu-accelerated-terminal-alacritty/#make-alacritty-feel-like-iterm2
+key_bindings:
+  # Use command + [ - to go to previous tmux window
+  - { key: LBracket, mods: Command, chars: "\x5c\x70" }
+  # Use command + ] - to go to previous tmux window
+  - { key: RBracket, mods: Command, chars: "\x5c\x6e" }
+  # ctrl-^ doesn't work in some terminals like alacritty
+  - { key: Key6, mods: Control, chars: "\x1e" }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  # - { key: Add, mods: Control, action: IncreaseFontSize }
+  # - { key: Subtract, mods: Control, action: DecreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  # - { key: N, mods: Control, action: SpawnNewInstance }
+  - { key: F, mods: Command|Shift, action: ToggleFullscreen }
+
+# Colors (Snazzy)
+colors:
+  # Default colors
+  primary:
+    background: "#11141a"
+    foreground: "#ffffff"
+
+  # Normal colors
+  normal:
+    black: "#282a36"
+    red: "#ff5c57"
+    green: "#5af78e"
+    yellow: "#f3f99d"
+    blue: "#57c7ff"
+    magenta: "#ff6ac1"
+    cyan: "#9aedfe"
+    white: "#f1f1f0"
+
+  # Bright colors
+  bright:
+    black: "#686868"
+    red: "#ff5c57"
+    green: "#5af78e"
+    yellow: "#f3f99d"
+    blue: "#57c7ff"
+    magenta: "#ff6ac1"
+    cyan: "#9aedfe"
+    white: "#f1f1f0"

@@ -1,0 +1,9 @@
+configstore/*
+iterm2/*
+yarn/*
+nvim/*
+nvim
+nvim.old/*
+coc/*
+coc.old/*
+karabiner/automatic_backups/*
