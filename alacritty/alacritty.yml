@@ -4,20 +4,20 @@ env:
 # Window customisation
 window:
   # Spread additional padding evenly around the terminal content.
-  # dynamic_padding: true
+  dynamic_padding: true
 
   # Startup Mode (changes require restart)
   startup_mode: Windowed
 
   # Window padding
-  # padding:
-  # x: 5
-  # y: 5
+  padding:
+    x: 0
+    y: 0
 
   # Decorations
   decorations: none
 
-background_opacity: 0.94
+background_opacity: 0.90
 
 scrolling:
   history: 10000
