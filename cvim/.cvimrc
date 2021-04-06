@@ -1,0 +1,17 @@
+let configpath = '~/.config/cvim/.cvimrc'
+set localconfig
+
+set noautofocus
+
+set scalehints
+
+let barposition = "bottom"
+
+let completionengines = ["google", "youtube"]
+
+set typelinkhints
+let searchlimit = 30
+
+let searchalias g = "google"
+let searchalias y = "youtube"
+

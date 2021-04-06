@@ -1,8 +1,8 @@
 #!/bin/zsh
 
-alias zshconfig="nvim ~/.zshrc"
+alias zconf="nvim ~/.zshrc"
 
-alias save_zsh="source ~/.zshrc"
+alias zsource="source ~/.zshrc"
 
 alias py="python3"
 
@@ -34,6 +34,8 @@ alias n9="n 9.11.2"
 alias n12="n 12.16.1"
 
 alias r='f() { ssh root@$1. };f'
+
+alias forward_ca='f() {ssh -L 1000$1:127.0.0.1:10000 root@ca$1 "echo KEEP OPEN TO FORWARD PORT on ca$1; sleep 86400" };f'
 
 alias j='f() { 
   case $1 in
@@ -86,6 +88,7 @@ alias nvnewtheme='f() { touch $HOME/.config/nvim/themes/$1.vim };f'
 alias nvedittheme='f() { nv $HOME/.config/nvim/themes/$1.vim };f'
 
 alias tm='tmux'
+alias tmk='tmux kill-ses -t'
 alias tls='tmux ls'
 alias ta='tmux a'
 alias tat='tmux a -t'

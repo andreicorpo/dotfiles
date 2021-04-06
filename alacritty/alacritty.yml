@@ -84,8 +84,13 @@ key_bindings:
   # - { key: Add, mods: Control, action: IncreaseFontSize }
   # - { key: Subtract, mods: Control, action: DecreaseFontSize }
   - { key: Minus, mods: Control, action: DecreaseFontSize }
-  # - { key: N, mods: Control, action: SpawnNewInstance }
+  - { key: A, mods: Control|Shift|Alt|Command, action: SpawnNewInstance }
   - { key: F, mods: Command|Shift, action: ToggleFullscreen }
+  - { key: N, mods: Command|Shift|Alt|Control, chars: "nv " }
+  - { key: G, mods: Command|Shift|Alt|Control, chars: "lazygit\n" }
+  - { key: D, mods: Command|Shift|Alt|Control, chars: "lazydocker\n" }
+  # Allow mapping enter + shift
+  - { key: Return,   mods: Shift,   chars: "\x1b[13;2u" }
 
 # Colors (Snazzy)
 colors:

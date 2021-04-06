@@ -2,6 +2,8 @@ configstore/*
 iterm2/*
 yarn/*
 nvim/*
+nvcode/*
+nvcode
 nvim
 nvim.old/*
 coc/*
